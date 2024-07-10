@@ -1,0 +1,120 @@
+.info {
+  padding-block: 6rem 4rem;
+}
+
+.info h4 {
+  font-size: 1.4rem;
+  text-align: center;
+  color: aliceblue;
+  margin-bottom: 4rem;
+}
+
+.all-cards {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 6rem;
+}
+
+.article-card {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.article-card img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.article-card h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  margin-block: 1rem 0.5rem;
+}
+
+.article-card p {
+  font-size: 0.85rem;
+  color: rgb(226, 226, 226);
+}
+
+.info video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: black;
+  border-radius: 0.3rem;
+}
+
+.video-info {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 0.5rem;
+  color: rgb(168, 168, 168);
+}
+
+.info-video {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.video-desc p:first-child,
+.video-desc > p:nth-child(2) {
+  font-size: 0.85rem;
+  line-height: 1.2rem;
+  color: rgb(228, 228, 228);
+}
+
+.video-desc p:first-child {
+  margin-bottom: 2rem;
+}
+
+.video-desc > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.video-card {
+  display: flex;
+  gap: 1rem;
+}
+
+.video-card img {
+  width: 1.5rem;
+}
+
+.video-card p {
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  color: aliceblue;
+}
+
+/* ------ Media-Queries ------ */
+/* ========================================== */
+@media screen and (min-width: 600px) {
+  .all-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .all-cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .info-video {
+    flex-direction: row-reverse;
+  }
+
+  .video-container {
+    width: 55%;
+  }
+
+  .video-desc {
+    width: 45%;
+  }
+}

@@ -1,0 +1,125 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-link {
+  width: 4rem;
+  padding: 1rem 0.6rem 0.6rem;
+  border-radius: 0 0 0.3rem 0.3rem;
+  background-color: white;
+}
+
+.header-options {
+  display: flex;
+  align-items: center;
+  column-gap: 0.4rem;
+}
+
+.header-options .language-btn {
+  font-size: 0.7rem;
+  color: white;
+  padding: 0.5rem 0.3rem;
+  display: flex;
+  align-items: center;
+  column-gap: 0.4rem;
+  background-color: transparent;
+}
+
+.language-btn .globe-icon {
+  width: 1.2rem;
+  display: none;
+}
+
+.language-btn .chevron_down-icon {
+  width: 0.6rem;
+  stroke-width: 0.15rem;
+}
+
+.header-options a {
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 0.5rem 0.5rem;
+  border: 1px solid white;
+  border-radius: 0.3rem;
+  transition: color, 0.15s ease-in-out, background-color, 0.15s ease-in-out;
+}
+
+.header-options .login-link {
+  color: white;
+  background-color: transparent;
+}
+
+.header-options .sign_up-link {
+  color: var(--clr-main-blue);
+  background-color: white;
+}
+
+.header-options .login-link:hover {
+  color: var(--clr-main-blue);
+  background-color: white;
+}
+
+.header-options .sign_up-link:hover {
+  color: white;
+  background-color: transparent;
+}
+
+/* ------ Media-Queries ------ */
+/* ========================================== */
+@media screen and (min-width: 500px) {
+  .logo-link {
+    width: 5rem;
+    padding: 1.4rem 1rem 1rem;
+  }
+
+  .header-options {
+    column-gap: 0.6rem;
+  }
+
+  .header-options .language-btn {
+    font-size: 0.8rem;
+    padding-inline: 0.5rem;
+    column-gap: 0.6rem;
+  }
+
+  .language-btn .globe-icon {
+    display: inline;
+  }
+
+  .language-btn .chevron_down-icon {
+    width: 0.7rem;
+  }
+
+  .header-options a {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .logo-link {
+    width: 7rem;
+    padding: 2rem 2rem 1rem;
+  }
+
+  .header-options .language-btn {
+    font-size: 0.9rem;
+    margin-right: 1rem;
+  }
+
+  .language-btn .globe-icon {
+    width: 1.4rem;
+    display: inline;
+  }
+
+  .language-btn .chevron_down-icon {
+    width: 0.8rem;
+    margin-left: 0.4rem;
+  }
+
+  .header-options a {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+}

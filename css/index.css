@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import 'header.css';
+@import 'hero.css';
+@import 'info.css';
+@import 'footer.css';
+
+*,
+html {
+  margin: 0;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: var(--clr-main-blue);
+}
+
+:root {
+  --clr-main-blue: #1c39bb;
+  --clr-main-dark: #14161c;
+}
+
+/* ------ General ------ */
+/* ========================================== */
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  border-radius: 0.3rem;
+  outline: none;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+header,
+footer,
+.hero,
+.info {
+  max-width: 1200px;
+  padding-inline: 1rem;
+  margin-inline: auto;
+}
+
+.info-wrapper {
+  background-color: var(--clr-main-dark);
+}
+
+/* ------ Scroll-Bar ------ */
+/* ========================================== */
+body::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: rgb(98, 98, 98);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(193, 193, 193);
+  border-radius: 0.3rem;
+}
+
+/* ------ Media-Queries ------ */
+/* ========================================== */
+@media screen and (min-width: 500px) {
+  body::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  header,
+  footer,
+  .hero,
+  .info {
+    padding-inline: 2rem;
+  }
+
+  body::-webkit-scrollbar {
+    width: 0.7rem;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  header,
+  footer,
+  .hero,
+  .info {
+    padding-inline: 0;
+  }
+
+  body::-webkit-scrollbar {
+    width: 0.9rem;
+  }
+}

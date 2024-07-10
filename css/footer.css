@@ -1,0 +1,137 @@
+footer {
+  padding-block: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+footer > div:first-child {
+  display: grid;
+  gap: 3rem;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer-logo {
+  width: 8rem;
+  padding: 1rem 2rem 0.6rem;
+  border-radius: 0.5rem;
+  background-color: white;
+}
+
+.footer-desc {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  text-align: center;
+  color: aliceblue;
+}
+
+.footer-pages,
+.footer-contact_us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.footer-pages h6,
+.footer-contact_us h6 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+}
+
+.footer-pages_links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.footer-pages_links a {
+  font-size: 0.8rem;
+  text-align: center;
+  color: aliceblue;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.social-links a {
+  width: 2.2rem;
+  padding: 0.1rem;
+  display: flex;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.footer-contact_us a img {
+  border-radius: 50%;
+  color: transparent;
+  background-color: white;
+}
+
+footer > div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1rem;
+}
+
+.footer-links a {
+  width: 8rem;
+  display: flex;
+}
+
+.copyright {
+  color: aliceblue;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+/* ------ Media-Queries ------ */
+/* ========================================== */
+@media screen and (min-width: 700px) {
+  footer > div:first-child {
+    grid-template-columns: repeat(2, 1fr);
+    place-items: start;
+  }
+
+  .footer-info {
+    align-items: start;
+  }
+
+  .footer-desc {
+    text-align: left;
+  }
+
+  footer > div:last-child {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  footer > div:first-child {
+    grid-template-columns: repeat(3, 1fr);
+    place-items: unset;
+  }
+
+  .footer-links a {
+    width: 10rem;
+  }
+}
